@@ -5,3 +5,5 @@ pydantic
 pydantic-settings
 alembic
 python-multipart
+python-dotenv
+email-validator
