@@ -1,0 +1,176 @@
+:root {
+    /* ================================
+       COLORS
+    ================================= */
+
+    --color-primary: #2563eb;
+    --color-primary-dark: #1d4ed8;
+    --color-primary-light: #60a5fa;
+
+    --color-secondary: #7c3aed;
+
+    --color-background: #ffffff;
+    --color-background-secondary: #f8fafc;
+    --color-background-dark: #0f172a;
+
+    --color-surface: #ffffff;
+    --color-surface-dark: #1e293b;
+
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #475569;
+    --color-text-light: #94a3b8;
+    --color-text-white: #ffffff;
+
+    --color-border: #e2e8f0;
+
+    --color-success: #16a34a;
+    --color-warning: #f59e0b;
+    --color-error: #dc2626;
+
+
+    /* ================================
+       TYPOGRAPHY
+    ================================= */
+
+    --font-primary: "Inter", sans-serif;
+    --font-heading: "Poppins", sans-serif;
+
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+    --font-size-6xl: 3.75rem;
+
+
+    /* ================================
+       SPACING
+    ================================= */
+
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+    --spacing-4xl: 6rem;
+
+
+    /* ================================
+       BORDER RADIUS
+    ================================= */
+
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-full: 9999px;
+
+
+    /* ================================
+       SHADOWS
+    ================================= */
+
+    --shadow-sm:
+        0 1px 2px rgba(0, 0, 0, 0.05);
+
+    --shadow-md:
+        0 4px 6px rgba(0, 0, 0, 0.1);
+
+    --shadow-lg:
+        0 10px 15px rgba(0, 0, 0, 0.1);
+
+    --shadow-xl:
+        0 20px 25px rgba(0, 0, 0, 0.15);
+
+
+    /* ================================
+       TRANSITIONS
+    ================================= */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+
+    /* ================================
+       CONTAINER
+    ================================= */
+
+    --container-width: 1200px;
+    --container-padding: 1.5rem;
+
+
+    /* ================================
+       Z-INDEX
+    ================================= */
+
+    --z-navbar: 1000;
+    --z-modal: 2000;
+    --z-tooltip: 3000;
+
+    /* ================================
+       NAVBAR VARIABLES
+    ================================= */
+    --color-navbar-bg: rgba(255, 255, 255, 0.2);
+    --color-navbar-text: var(--color-text-primary);
+    --color-navbar-hover: var(--color-primary);
+    --logo-filter: invert(1) hue-rotate(180deg);
+
+    /* ================================
+       HERO VARIABLES (LIGHT)
+    ================================= */
+    --hero-bg-image: url('/src/assets/images/hero-bg-light.png');
+    --hero-overlay-start: rgba(248, 250, 252, 0.9); /* Slightly cooler/softer white */
+    --hero-overlay-end: rgba(248, 250, 252, 0.4);
+    
+    --color-hero-subtitle: var(--color-primary);
+    --color-hero-role: #d97706;
+    --color-hero-text: var(--color-text-secondary);
+    --color-hero-icon: var(--color-text-primary);
+    --hero-text-shadow: none;
+    --hero-title-shadow: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    --hero-image-glow: rgba(96, 165, 250, 0.3);
+}
+
+/* ================================
+   DARK MODE OVERRIDES
+================================= */
+[data-theme="dark"] {
+    --color-background: #0f172a;
+    --color-background-secondary: #1e293b;
+    --color-surface: #1e293b;
+    
+    --color-text-primary: #f8fafc;
+    --color-text-secondary: #cbd5e1;
+    
+    --color-border: #334155;
+
+    /* ================================
+       NAVBAR VARIABLES (DARK)
+    ================================= */
+    --color-navbar-bg: rgba(15, 23, 42, 0.2);
+    --color-navbar-text: var(--color-text-light);
+    --color-navbar-hover: var(--color-primary-light);
+    --logo-filter: none;
+
+    /* ================================
+       HERO VARIABLES (DARK)
+    ================================= */
+    --hero-bg-image: url('/src/assets/images/hero-bg.png');
+    --hero-overlay-start: rgba(15, 23, 42, 0.9);
+    --hero-overlay-end: rgba(15, 23, 42, 0.3);
+    
+    --color-hero-subtitle: var(--color-primary-light);
+    --color-hero-role: var(--color-warning);
+    --color-hero-text: var(--color-text-light);
+    --color-hero-icon: var(--color-text-white);
+    --hero-text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    --hero-title-shadow: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.6));
+    --hero-image-glow: rgba(96, 165, 250, 0.6);
+}

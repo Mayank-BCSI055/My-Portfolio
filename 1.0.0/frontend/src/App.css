@@ -1,0 +1,80 @@
+/* ================================
+   APP
+================================= */
+
+/*
+   App.jsx currently renders MainLayout.
+   Keep this file for App-level layout styles.
+   Component-specific styles should stay inside
+   their respective component CSS files.
+*/
+
+#root {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.global-bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+    background-color: var(--color-background);
+}
+
+.ambient-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.3;
+    animation: float 20s infinite alternate ease-in-out;
+}
+
+.ambient-blob-1 {
+    top: -10%;
+    left: -10%;
+    width: 50vw;
+    height: 50vw;
+    background-color: var(--color-primary-light);
+}
+
+.ambient-blob-2 {
+    bottom: -10%;
+    right: -10%;
+    width: 40vw;
+    height: 40vw;
+    background-color: var(--color-secondary);
+    animation-duration: 25s;
+    animation-direction: alternate-reverse;
+}
+
+.bg-pattern-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(var(--color-text-light) 1.5px, transparent 1.5px);
+    background-size: 30px 30px;
+    opacity: 0.15;
+}
+
+[data-theme="dark"] .bg-pattern-overlay {
+    opacity: 0.05;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(5%, 10%) scale(1.1);
+    }
+    100% {
+        transform: translate(-5%, -5%) scale(0.95);
+    }
+}

@@ -1,0 +1,21 @@
+/* ================================
+   GLOBAL STYLES
+================================= */
+
+body {
+    overflow-x: clip; /* clip allows position: sticky to work, whereas hidden breaks it */
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-text-white);
+}
+
+section {
+    width: 100%;
+}
+
+button,
+a {
+    transition: all var(--transition-normal);
+}

@@ -1,0 +1,155 @@
+/* ================================
+   CONTAINER
+================================= */
+
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+
+/* ================================
+   SECTION
+================================= */
+
+.section {
+    padding: var(--spacing-4xl) 0;
+}
+
+.section-header {
+    max-width: 750px;
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.section-header h2 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.section-header h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin: 3px auto 0;
+    background: var(--color-primary);
+    border-radius: var(--radius-full);
+}
+
+.section-title {
+    margin-bottom: var(--spacing-md);
+}
+
+.section-description {
+    max-width: 650px;
+    margin: 0.5rem auto 0;
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* ================================
+   SECTION DIVIDER
+================================= */
+
+.section-divider {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    border: 0;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--color-primary),
+        transparent
+    );
+    opacity: 0.6;
+}
+
+
+/* ================================
+   FLEX
+================================= */
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ================================
+   GRID
+================================= */
+
+.grid {
+    display: grid;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* ================================
+   GAP
+================================= */
+
+.gap-sm {
+    gap: var(--spacing-sm);
+}
+
+.gap-md {
+    gap: var(--spacing-md);
+}
+
+.gap-lg {
+    gap: var(--spacing-lg);
+}
+
+.gap-xl {
+    gap: var(--spacing-xl);
+}
+
+.section-alternate-bg {
+    background-color: var(--color-background-secondary);
+    position: relative;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}

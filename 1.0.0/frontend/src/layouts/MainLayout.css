@@ -1,0 +1,16 @@
+/* ================================
+   MAIN LAYOUT
+================================= */
+
+main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*
+   MainLayout is responsible for page structure:
+   Navbar -> main content -> Footer.
+
+   Individual page/component styling should remain
+   inside the CSS file belonging to that component.
+*/
